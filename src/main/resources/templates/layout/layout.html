@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title} ?: 'LMS Platform'">LMS Platform</title>
+    <link rel="stylesheet" th:href="@{/css/admin.css}">
+</head>
+<body>
+<div class="admin-container">
+    <!-- Sidebar -->
+    <aside th:replace="~{layout/sidebar :: sidebar}"></aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header th:replace="~{layout/header :: header}"></header>
+
+        <!-- Content -->
+        <main class="content">
+            <th:block layout:fragment="content"></th:block>
+        </main>
+    </div>
+</div>
+
+<script th:src="@{/js/admin.js}"></script>
+</body>
+</html>

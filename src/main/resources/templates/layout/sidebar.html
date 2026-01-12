@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<aside th:fragment="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <div class="logo">
+            <span class="logo-text">LMS Platform</span>
+        </div>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="/" class="nav-item active">
+            <span>홈</span>
+        </a>
+
+        <a href="#" class="nav-item active">
+            <span>공지사항</span>
+        </a>
+    </nav>
+
+    <div class="sidebar-footer">
+        <div class="user-info">
+            <div class="user-details">
+                <div class="user-name">관리자</div>
+                <div class="user-role">Admin</div>
+            </div>
+            <button class="logout-btn">logout</button>
+        </div>
+    </div>
+</aside>
+</body>
+</html>
