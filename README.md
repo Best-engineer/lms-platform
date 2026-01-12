@@ -1,6 +1,6 @@
-# 🚀 [프로젝트명] Service
+# 🚀 [LMS-PLATFORM] Service
 
-> 프로젝트 한줄 소개를 입력하세요.
+> Learning Management System for Education
 
 ## 🛠 Tech Stack
 
